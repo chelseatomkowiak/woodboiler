@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "interfaceapp/temperature.html" %}
+<html lang="en">
+<head>
+    {% block title %}home{% endblock %}
+</head>
+<body>
+
+{% block content %}
+    Display the current temp:<br>
+    {{ CurrentStats.waterOut }}
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block title %}<title>Temperature</title>{% endblock %}
+</head>
+<body>
+{% block content %}
+Temperature of incoming water:<br>
+{% for CurrentStats in tempp %}
+{{ CurrentStats.waterIn }}
+{% endfor %}<br>
+Temperature of outgoing water:<br>
+{% for CurrentStats in tempp %}
+{{ CurrentStats.waterOut }}
+{% endfor %}
+{% endblock %}
+</body>
+</html>
